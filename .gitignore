@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temp
+*.tar.gz
+*.zip
+tmp/
+temp/
+
+# Server
+__pycache__/
+node_modules/

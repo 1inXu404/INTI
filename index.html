@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTI - 测测你是哪种影像玩家</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script type="module" src="./src/scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <section id="intro" class="screen active">
+        <div class="hero card hero-minimal">
+          <p class="eyebrow">影石 Insta360</p>
+          <h1>测测你是哪种影像玩家</h1>
+          <p class="hero-sub">
+            INTI — Insta Nexus Type Indicator<br />
+            10 道题，找到最适合你的影石产品
+          </p>
+          <div class="hero-actions hero-actions-single">
+            <button id="startBtn" class="btn-primary">开始测试</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="test" class="screen">
+        <div class="test-wrap card">
+          <div class="topbar">
+            <div class="progress"><span id="progressBar"></span></div>
+            <div class="progress-text" id="progressText">0 / 10</div>
+          </div>
+
+          <div id="questionList" class="question-list"></div>
+
+          <div class="actions-bottom">
+            <div class="hint" id="testHint">全选完才会放行。认真点，这关系到你的人生装备。</div>
+            <button id="submitBtn" class="btn-primary" disabled>查看结果</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="result" class="screen">
+        <div class="result-wrap card">
+          <div class="result-layout">
+            <div class="result-top">
+              <div class="poster-box" id="posterBox">
+                <img id="posterImage" class="poster-image" alt="人格结果图" />
+              </div>
+
+              <div class="poster-search-tip">题库、文案、海报都可以自己改</div>
+
+              <div class="type-box">
+                <div class="type-kicker" id="resultModeKicker">你的影像人格</div>
+                <div class="type-name" id="resultTypeName">—</div>
+                <div class="match" id="matchBadge">匹配度 100%</div>
+                <div class="type-subname" id="resultTypeSub">副标题</div>
+              </div>
+            </div>
+
+            <div class="analysis-box">
+              <h3>你为什么是这个类型</h3>
+              <p id="resultDesc"></p>
+            </div>
+
+            <div class="dim-box">
+              <h3>五维度分析</h3>
+              <div id="dimList" class="dim-list"></div>
+            </div>
+
+            <div class="note-box">
+              <h3>为你推荐</h3>
+              <p id="resultRecommend"></p>
+            </div>
+          </div>
+
+          <div class="result-actions">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <a id="buyBtn" class="btn-primary" href="" target="_blank">去购买 →</a>
+              <button id="shareBtn" class="btn-secondary">复制结果去装逼</button>
+              <button id="restartBtn" class="btn-secondary">重新测试</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
