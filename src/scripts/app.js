@@ -227,7 +227,7 @@ function renderResult() {
   const best = result.best;
   const poster = POSTERS[best.code];
 
-  refs.resultModeKicker.textContent = "你的影像人格";
+  refs.resultModeKicker.textContent = "你的影石人格";
   refs.resultTypeName.textContent = `${best.emoji} ${best.cn}`;
   refs.matchBadge.textContent = `匹配度 ${best.similarity}% · 精准命中 ${best.exact}/5 维`;
   refs.resultTypeSub.textContent = best.subtitle;
